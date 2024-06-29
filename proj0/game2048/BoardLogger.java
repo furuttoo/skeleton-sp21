@@ -12,7 +12,6 @@ class BoardLogger implements Observer {
     private static final String LINE = "---------------------";
 
     @Override
-    /** Prints the board state and how it was changed after each move. */
     public void update(Observable obs, Object arg) {
         Model model = (Model) obs;
         String direction;
